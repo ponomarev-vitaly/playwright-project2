@@ -9,6 +9,8 @@ test.describe("Examples", () => {
         await page.locator('#currentAddress').type("This is the current address");
         await page.locator('#permanentAddress').type("This is the permanent address");
         await page.locator('#submit').click(); 
+
+        await page.pause();
         
         const name = page.locator('#name');
         const email = page.locator('#email');
