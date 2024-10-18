@@ -5,7 +5,7 @@ const config = {
     timeout: 60000,
     
     use: {
-        baseURL: "https://demoqa.com/text-box/",
+        baseURL: "https://demoqa.com/",
         headless: true,
         viewport: {width: 1280, height: 720},
         video: "on",
