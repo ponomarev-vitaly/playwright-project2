@@ -11,9 +11,11 @@ test.describe("Examples", () => {
         await page.locator('#submit').click(); 
         
         const name = page.locator('#name');
-        const name = page.locator('#name');
-        const name = page.locator('#name');
-        const name = page.locator('#name');
+        const email = page.locator('#email');
+        const currentAddress = page.locator('#currentAddress');
+        const permanentAddress = page.locator('#permanentAddress');
+
+        
 
     });
 
