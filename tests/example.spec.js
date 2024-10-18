@@ -4,13 +4,13 @@ test.describe("Examples", () => {
     test("Testing locators", async ({ page }) => {
         //        
         await page.goto("/text-box");
-        //await page.locator('#userName').type("Test Username");
-        //await page.locator('[placeholder="name@example.com"]').type("siteco5432@advitize.com");
-        //await page.locator('#currentAddress').type("This is the current address");
-        //await page.locator('#permanentAddress').type("This is the permanent address");
-        //await page.locator('#submit').click(); 
+        await page.locator('#userName').type("Test Username");
+        await page.locator('[placeholder="name@example.com"]').type("siteco5432@advitize.com");
+        await page.locator('#currentAddress').type("This is the current address");
+        await page.locator('#permanentAddress').type("This is the permanent address");
+        await page.locator('#submit').click(); 
 
-        //await page.pause();
+        await page.pause();
         
         const name = page.locator('#name');
         const email = page.locator('#email');
