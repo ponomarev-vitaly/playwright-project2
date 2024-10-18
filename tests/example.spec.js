@@ -14,8 +14,8 @@ test.describe("Examples", () => {
         
         const name = page.locator('#name');
         const email = page.locator('#email');
-        const currentAddress = page.locator('#currentAddress');
-        const permanentAddress = page.locator('#permanentAddress');
+        const currentAddress = page.locator('//*[@id="currentAddress"]');
+        const permanentAddress = page.locator('//*[@id="permanentAddress"]');
 
         await expect(name).toBeVisible();
         await expect(name).toHaveText('Name:Test Username');
