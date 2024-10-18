@@ -6,7 +6,7 @@ test.describe("Examples", () => {
         await page.goto("/text-box");
         await page.locator('#userName').type("Test Username");
         await page.locator('[placeholder="name@example.com"]').type("siteco5432@advitize.com");
-        await page.locator('#currentAddress').type("Test");
+        await page.locator('[placeholder="Current Address"]').type("Current address test");
         await page.locator('#permanentAddress').type("Test");
         await page.locator('#submit').click(); 
 
@@ -22,7 +22,7 @@ test.describe("Examples", () => {
         await expect(email).toBeVisible();
         await expect(email).toHaveText('Email:siteco5432@advitize.com');
         await expect(currentAddress).toBeVisible();
-        await expect(currentAddress).toHaveText('Current Address :Test');
+        await expect(currentAddress).toHaveText('Current Address :Current address test');
         await expect(permanentAddress).toBeVisible();
         await expect(permanentAddress).toHaveText('Permananet Address :Test');
 
