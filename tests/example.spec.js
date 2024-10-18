@@ -15,7 +15,14 @@ test.describe("Examples", () => {
         const currentAddress = page.locator('#currentAddress');
         const permanentAddress = page.locator('#permanentAddress');
 
-        
+        await expect(name).toBeVisible();
+        await expect(name).toHaveText('Name:Test');
+        await expect(email).toBeVisible();
+        await expect(email).toHaveText('Email:siteco5432@advitize.com');
+        await expect(currentAddress).toBeVisible();
+        await expect(currentAddress).toHaveText('Current Address :This is the current address.');
+        await expect(permanentAddres).toBeVisible();
+        await expect(permanentAddress).toHaveText('Permananet Address :This is the permanent address.');
 
     });
 
